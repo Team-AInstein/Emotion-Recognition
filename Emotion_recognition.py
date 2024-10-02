@@ -6,7 +6,7 @@ from tensorflow.keras.optimizers import Adam
 import time
 
 
-emotion_model = load_model('C:/Users/naeem/VS Code Programs/Python_Projects/thakur_hackathon/emotion_model.h5', compile=False)
+emotion_model = load_model('emotion_model.h5', compile=False)
 
 emotion_model.compile(optimizer=Adam(learning_rate=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
 
